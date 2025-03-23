@@ -23,13 +23,12 @@ const forms = [
   {
     id: 2,
     content: (
-      <div className="mb-100 mt-15">
+      <div className="mb-70 mt-15">
         <h2 className="text-3xl font-bold"> Sing in to Your PopX account</h2>
         <p className="text-gray-600 mt-5 text-lg">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit.
         </p>
 
-        {/* Email */}
         <div className="relative mt-6">
           <label className="absolute -top-2 left-3 bg-white px-1 text-sm text-purple-600 font-semibold">
             Email Address
@@ -41,7 +40,6 @@ const forms = [
           />
         </div>
 
-        {/* Password */}
         <div className="relative mt-6">
           <label className="absolute -top-2 left-3 bg-white px-1 text-sm text-purple-600 font-semibold">
             Password
@@ -53,7 +51,6 @@ const forms = [
           />
         </div>
 
-        {/* Button */}
         <button className="mt-6 w-full py-3 bg-gray-400 text-white rounded-xl shadow-lg hover:bg-purple-600 transition">
           Login
         </button>
@@ -78,7 +75,6 @@ const forms = [
           />
         </div>
 
-        {/* Phone Number */}
         <div className="relative mt-6">
           <label className="absolute -top-2 left-3 bg-white px-1 text-sm text-purple-600 font-semibold">
             Phone Number
@@ -90,7 +86,6 @@ const forms = [
           />
         </div>
 
-        {/* Email Address */}
         <div className="relative mt-6">
           <label className="absolute -top-2 left-3 bg-white px-1 text-sm text-purple-600 font-semibold">
             Email Address
@@ -102,7 +97,6 @@ const forms = [
           />
         </div>
 
-        {/* Password */}
         <div className="relative mt-6">
           <label className="absolute -top-2 left-3 bg-white px-1 text-sm text-purple-600 font-semibold">
             Password
@@ -114,7 +108,6 @@ const forms = [
           />
         </div>
 
-        {/* Company Name */}
         <div className="relative mt-6">
           <label className="absolute -top-2 left-3 bg-white px-1 text-sm text-purple-600 font-semibold">
             Company Name
@@ -126,7 +119,6 @@ const forms = [
           />
         </div>
 
-        {/* Are you an Agency? */}
         <div className="mt-6">
           <label className="block text-purple-600 font-semibold">
             Are you an Agency?
@@ -143,8 +135,7 @@ const forms = [
           </div>
         </div>
 
-        {/* Button */}
-        <button className="mt-15 w-full py-3 bg-purple-600 text-white rounded-xl shadow-lg hover:bg-purple-700 transition">
+        <button className="mt-10 w-full py-3 bg-purple-600 text-white rounded-xl shadow-lg hover:bg-purple-700 transition">
           Create Account
         </button>
       </div>
@@ -156,22 +147,19 @@ const forms = [
       <div className="mb-100">
         <h2 className="text-3xl font-bold">Account Settings</h2>
 
-        {/* Profile Section */}
         <div className="flex items-center mt-4 bg-gray-100 p-4 relative">
-          {/* Profile Image */}
           <div className="relative">
             <img
               src={img}
               alt="User"
               className="rounded-full w-20 h-20 mr-4 shadow-lg border-4 border-gray-300 object-cover"
             />
-            {/* Camera Icon */}
+
             <div className="absolute bottom-0 right-0 bg-blue-500 text-white p-2 rounded-full shadow-md cursor-pointer border-2 border-white hover:bg-blue-600">
               <FaCamera className="w-4 h-4" />
             </div>
           </div>
 
-          {/* User Info */}
           <div>
             <h3 className="font-bold">Marry Doe</h3>
             <p className="text-gray-600">Marry@Gmail.Com</p>
@@ -206,7 +194,7 @@ export default function FormNavigator() {
           </motion.div>
         </AnimatePresence>
       </div>
-      <div className="flex justify-center items-center w-96 mt-10 gap-4">
+      <div className="flex justify-center items-center w-96 mt-3 gap-4">
         <button
           className="p-2 bg-gray-200 rounded-full shadow-lg"
           onClick={() => setIndex(0)}
